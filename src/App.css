@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023047;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Headtitle {
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chatBord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ade8f4;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 700px;
+  height: 450px;
+  margin: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.inputContainer input {
+  flex: 1;
+  padding: 15px;
+  border-radius: 50px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+.inputContainer button {
+  padding: 15px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.inputContainer button:hover {
+  background-color: #45a049;
 }
