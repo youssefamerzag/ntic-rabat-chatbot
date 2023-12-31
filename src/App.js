@@ -9,25 +9,26 @@ const App = () => {
   const [nb, setNb] = useState(Math.floor(Math.random() * 3));
 
   const send = () => {
-    const newList = [botMessage, yourMessage, ...messages];
+    const newList = [...messages,yourMessage, botMessage];
     setMessages(newList);
     setNb(Math.floor(Math.random() * 3));
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      send();
+    }
+  };
+
   useEffect(() => {
     const checkMessage = (intent) =>
-      intent.patterns
-        .map((pattern) => pattern.toLowerCase())
-        .includes(yourMessage.toLowerCase());
-
-    for (let i = 1; i <= 30; i++) {
-      if (checkMessage(data.intents[i])) {
-        setBotMessage(data.intents[i].responses[nb]);
-        return;
+      intent.patterns.map((pattern) => pattern.toLowerCase()).includes(yourMessage.toLowerCase());
+      for (let i = 1; i <= 43; i++) {
+        if (checkMessage(data.intents[i])) {
+          setBotMessage(data.intents[i].responses[nb]);
+          return;
+        }
       }
-    }
-
-    // If no match is found
     setBotMessage("I'm sorry, I don't understand that.");
   }, [yourMessage, nb]);
 
@@ -40,15 +41,18 @@ const App = () => {
       <body>
         <div className="chatBord">
           <div className="chat">
-            <div className="messages">
-              {messages.map((message, index) => (
-                <p key={index}>{message}</p>
-              ))}
+          <div className="messages">
+            {messages.slice(0).reverse().map((message, index) => (
+              <div key={index} className={`message-bubble ${index % 2 == 0 ? 'user-message' : 'bot-message'}`}>
+                {message}
+              </div>
+            ))}
             </div>
             <div className="inputContainer">
               <input
                 placeholder="Type your message..."
                 onChange={(e) => setYourMessage(e.target.value)}
+                onKeyPress={handleKeyPress}
               ></input>
               <button onClick={send}>Send</button>
             </div>

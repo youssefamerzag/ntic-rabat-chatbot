@@ -1,6 +1,5 @@
 {
     "intents": [
-
         {
             "tag": "google",
             "patterns": [
@@ -17,7 +16,6 @@
             "patterns": [
                 "Hi",
                 "Hi there",
-                "How are you",
                 "Is anyone there?",
                 "Hey",
                 "Hola",
@@ -27,9 +25,9 @@
                 "yo"
             ],
             "responses": [
-                "Hello",
+                "Hi there, how can I help?",
                 "Good to see you again",
-                "Hi there, how can I help?"
+                "hello"
             ],
             "context": [
                 ""
@@ -155,10 +153,17 @@
                 "Whats up",
                 "Wazzup",
                 "How are you",
-                "sup","How you doing"
+                "sup","How you doing",
+                "How are you",
+                "How are u",
+                "are you fine",
+                "are you good"
             ],
             "responses": [
-                "All good..What about you?"
+                "All good..What about you?",
+                "im great, and you?",
+                "im good, Thank you so much?",
+                "im fine, how can i help you today?"
             ]
         },
         {
@@ -405,8 +410,235 @@
                 "how old are you","when were you made","what is your age"
             ],
             "responses": [
-                "I was made in 2020, if that's what you are asking!"
+                "I was made in 2024 by Youssef Amerzag, if that's what you are asking!",
+                "I was made in 2024 by Youssef Amerzag, if that's what you are asking!",
+                "I was made in 2024 by Youssef Amerzag, if that's what you are asking!"
             ]
-        }
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "i need help",
+                "help me",
+                "i need your help",
+                "help",
+                "can you help me",
+                "I need assistance",
+                "support",
+                "what can you assist with"
+            ],
+            "responses": [
+                "Of course! I'm here to help. What do you need assistance with?",
+                "Sure thing! What can I help you with?",
+                "I'm here to assist you. How may I help you today?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "about",
+            "patterns": [
+                "tell me about yourself",
+                "what's your story",
+                "who created you",
+                "your background"
+            ],
+            "responses": [
+                "I am a chatbot designed to assist and chat with users. My creator is Youssef Amerzag.",
+                "I'm a chatbot created by Youssef Amerzag. I'm here to chat and help you with various tasks.",
+                "I'm a product of Youssef Amerzag's creativity, designed to be your helpful chat companion."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "favorites",
+            "patterns": [
+                "what are your favorite things",
+                "your preferences",
+                "what do you like"
+            ],
+            "responses": [
+                "As a chatbot, I don't have personal preferences. I'm here to assist you!",
+                "I don't have favorites, but I'm here to help you with anything you need.",
+                "I'm a chatbot, so I don't have personal likes or dislikes. How can I assist you?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like today?",
+                "Tell me the weather forecast",
+                "Is it going to rain tomorrow?",
+                "Weather update",
+                "Forecast for [city]"
+            ],
+            "responses": [
+                "Sure, I can help you with that. Please specify the city or location you're interested in.",
+                "To provide the weather forecast, I'll need to know the city or region. Please specify.",
+                "I can give you the current weather and forecast. Just let me know the city or location."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": [
+                "Tell me about the latest technology news",
+                "What's happening in the tech world?",
+                "Tech updates",
+                "Latest gadgets"
+            ],
+            "responses": [
+                "Sure, I can provide you with the latest tech news. What specific topic are you interested in?",
+                "I can share the latest technology updates. Is there a particular area of tech you want to know about?",
+                "Tech is fascinating! What aspect of technology are you curious about?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "movies",
+            "patterns": [
+                "Recommend a good movie",
+                "What's a popular movie right now?",
+                "Tell me about the latest movies",
+                "Any good films playing?"
+            ],
+            "responses": [
+                "Sure, I'd be happy to recommend a movie. What genre are you in the mood for?",
+                "Movies are great! Tell me your preferred genre, and I'll recommend something for you.",
+                "There are so many great movies out there. Any specific genre you're interested in?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "travel",
+            "patterns": [
+                "Suggest a travel destination",
+                "Tell me about a beautiful place to visit",
+                "Best travel destinations",
+                "Travel tips"
+            ],
+            "responses": [
+                "Traveling is exciting! Do you have a specific type of destination in mind, like a beach or a city?",
+                "I can suggest some fantastic travel destinations. What kind of place are you looking for?",
+                "Traveling is a great way to explore the world. Any particular region you're interested in?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "food",
+            "patterns": [
+                "Recommend a good restaurant",
+                "What's a popular dish?",
+                "Tell me about food recipes",
+                "Any good places to eat?"
+            ],
+            "responses": [
+                "I can help you find a great restaurant! What type of cuisine are you in the mood for?",
+                "Food is wonderful! Do you have a specific cuisine or dish in mind?",
+                "There are so many delicious options. Any particular type of food you're craving?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "fitness",
+            "patterns": [
+                "Suggest a workout routine",
+                "Tell me about fitness tips",
+                "Best exercises for [body part]",
+                "Fitness motivation"
+            ],
+            "responses": [
+                "Staying fit is important! What specific area of fitness are you interested in?",
+                "Exercise is a great way to stay healthy. Do you have a particular fitness goal in mind?",
+                "I can provide workout routines and tips. Any specific fitness-related question you have?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "history",
+            "patterns": [
+                "Tell me about historical events",
+                "What happened on this day in history?",
+                "Famous historical figures",
+                "Historical facts"
+            ],
+            "responses": [
+                "History is fascinating! Is there a specific time period or event you want to know more about?",
+                "I can share interesting historical facts. Do you have a particular era in mind?",
+                "There's so much history to explore! Any specific historical topic you're curious about?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "science",
+            "patterns": [
+                "Tell me about recent scientific discoveries",
+                "Explain a scientific concept",
+                "Science news",
+                "Famous scientists"
+            ],
+            "responses": [
+                "Science is amazing! What area of science are you interested in?",
+                "I can share the latest scientific discoveries. Do you have a specific topic in mind?",
+                "There's so much to learn in the world of science! Any particular field you want to explore?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+            {
+                "tag": "music",
+                "patterns": [
+                "Top music artists",
+                "Best albums of all time",
+                "Music recommendations",
+                "New music releases",
+                "Favorite genre"
+                ],
+                "responses": [
+                "I love music! Here are some top music artists.",
+                "The best albums of all time vary, but some classics include...",
+                "Looking for music recommendations? How about trying...",
+                "Check out these new music releases!",
+                "What's your favorite music genre?"
+                ]
+            },
+            {
+                "tag": "movies",
+                "patterns": [
+                "Best movies to watch",
+                "Favorite movie genre",
+                "Top actors of all time",
+                "Movie recommendations",
+                "Latest movie releases"
+                ],
+                "responses": [
+                "Love movies? Here are some of the best movies to watch.",
+                "What's your favorite movie genre? Mine is science fiction.",
+                "Who do you think are the top actors of all time?",
+                "Need any movie recommendations? I've got you covered!",
+                "Check out these latest movie releases!"
+                ]
+            }
     ]
 }

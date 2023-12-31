@@ -43,7 +43,28 @@ header {
 .messages {
   flex: 1;
   padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
   overflow-y: auto;
+}
+
+.message-bubble {
+    background-color: #e0f7fa;
+    padding: 10px;
+    margin: 10px auto; /* Updated to center the message horizontally */
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: center; /* Center the text within the bubble */
+  }
+
+.user-message {
+  align-self: flex-end;
+  background-color: #e0f7fa;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #b4ffb8;
 }
 
 .inputContainer {
