@@ -60,11 +60,13 @@ header {
 .user-message {
   align-self: flex-end;
   background-color: #e0f7fa;
+  margin-left: 40px;
 }
 
 .bot-message {
   align-self: flex-start;
   background-color: #b4ffb8;
+  margin-right: 50px;
 }
 
 .inputContainer {

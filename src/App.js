@@ -36,7 +36,7 @@ const App = () => {
     <div>
       <header>
         <p className="Headtitle">Chat with Bot Online</p>
-        <p>Simply ask your AI chatbot assistant to generate!</p>
+        <p>Simply ask your chatbot assistant to generate!</p>
       </header>
       <body>
         <div className="chatBord">
