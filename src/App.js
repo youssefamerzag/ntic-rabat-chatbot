@@ -6,13 +6,12 @@ const App = () => {
   const [messages, setMessages] = useState([]);
   const [yourMessage, setYourMessage] = useState('');
   const [botMessage, setBotMessage] = useState('');
-  const [nb, setNb] = useState(Math.floor(Math.random() * 3));
 
   const send = () => {
     const newList = [...messages,yourMessage, botMessage];
+    setYourMessage('')
     setMessages(newList);
-    setNb(Math.floor(Math.random() * 3));
-  };
+    };
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -29,8 +28,7 @@ const App = () => {
           return;
       }
       }
-    setBotMessage("I'm sorry, I don't understand that.");
-  }, [yourMessage, nb]);
+  }, [yourMessage]);
 
   return (
     <div>
@@ -52,6 +50,7 @@ const App = () => {
               <input
                 placeholder="Type your message..."
                 onChange={(e) => setYourMessage(e.target.value)}
+                value={yourMessage}
                 onKeyPress={handleKeyPress}
               ></input>
               <button onClick={send}>Send</button>
