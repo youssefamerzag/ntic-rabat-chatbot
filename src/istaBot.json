@@ -1,0 +1,308 @@
+{
+    "intents": [
+        {
+            "tag": "stage",
+            "patterns": [
+                "stage",
+                "stage 2eme annee",
+                "les periodes des stages",
+                "stages",
+                "la periode de stage",
+                "periode de stage",
+                ""
+            ],
+            "responses": [
+                "<img src='./imgs/stage.jpeg' width='300px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS201",
+                "full stack 201",
+                "fullstack 201"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=241' width='550px' height='250px' style='transform: scale(1)'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS202",
+                "full stack 202",
+                "fullstack 202"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=244' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS203",
+                "full stack 203",
+                "fullstack 203"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=245' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS204",
+                "full stack 204",
+                "fullstack 204"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=246' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS205",
+                "full stack 205",
+                "fullstack 205"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=251' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS206",
+                "full stack 206",
+                "fullstack 206"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=247' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS207",
+                "full stack 207",
+                "fullstack 207"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=258' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS208",
+                "full stack 208",
+                "fullstack 208"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=257' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS209",
+                "full stack 209",
+                "fullstack 209"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=256' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEVOWFS210",
+                "full stack 210",
+                "fullstack 210"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=265' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "INFO101",
+                "infographie 101"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=214' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "INFO102",
+                "infographie 102"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=219' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "INFO103",
+                "infographie 103"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=216' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV101",
+                "dev 101"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=202' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV102",
+                "dev 102"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=203' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV103",
+                "dev 103"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=204' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV104",
+                "dev 104"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=205' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV105",
+                "dev 105"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=206' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV106",
+                "dev 106"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=207' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV107",
+                "dev 107"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=208' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV108",
+                "dev 108"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=209' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV109",
+                "dev 109"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=210' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "DEV110",
+                "dev 110"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=211' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "ID101",
+                "ID 101"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=221' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "ID102",
+                "ID 102"
+            ],
+            "responses": [
+                "<iframe src=https://www.nticrabat.com/emploi/emp.php?groupe=222' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "ID103",
+                "ID 103"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=223' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "ID104",
+                "ID 104"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=255' width='550px' height='250px'></iframe>"
+            ]
+        },
+        {
+            "tag": "emplois",
+            "patterns": [
+                "ID105",
+                "ID 105"
+            ],
+            "responses": [
+                "<iframe src='https://www.nticrabat.com/emploi/emp.php?groupe=259' width='550px' height='250px'></iframe>"
+            ]
+        }
+]}

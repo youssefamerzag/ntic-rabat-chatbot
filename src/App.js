@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import data from './bot.json';
+import data from './istaBot.json';
 
 const App = () => {
   const [messages, setMessages] = useState([]);
@@ -23,11 +23,11 @@ const App = () => {
   useEffect(() => {
     const checkMessage = (intent) =>
       intent.patterns.map((pattern) => pattern.toLowerCase()).includes(yourMessage.toLowerCase());
-      for (let i = 1; i <= 43; i++) {
+      for (let i = 0; i <= 27; i++) {
         if (checkMessage(data.intents[i])) {
-          setBotMessage(data.intents[i].responses[nb]);
+          setBotMessage(data.intents[i].responses[0]);
           return;
-        }
+      }
       }
     setBotMessage("I'm sorry, I don't understand that.");
   }, [yourMessage, nb]);
@@ -35,8 +35,8 @@ const App = () => {
   return (
     <div>
       <header>
-        <p className="Headtitle">Chat with Bot Online</p>
-        <p>Simply ask your chatbot assistant to generate!</p>
+        <p className="Headtitle">NTIC Rabat ChatBot</p>
+        <p></p>
       </header>
       <body>
         <div className="chatBord">
@@ -44,7 +44,7 @@ const App = () => {
           <div className="messages">
             {messages.slice(0).reverse().map((message, index) => (
               <div key={index} className={`message-bubble ${index % 2 == 0 ? 'user-message' : 'bot-message'}`}>
-                {message}
+                <div dangerouslySetInnerHTML={{ __html: message }}/>
               </div>
             ))}
             </div>
@@ -59,6 +59,10 @@ const App = () => {
           </div>
         </div>
       </body>
+      <div style={{textAlign : 'center', display : 'flex', justifyContent : 'center', marginTop : '50px'}}>
+        <a href='https://github.com/youssefamerzag' style={{margin : '10px'}}><img width="41" height="41" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/FFFFFF/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png" alt="github"/></a>
+        <a href='https://linkedin.com/in/youssefamerzag' style={{margin : '10px'}}><img width="45" height="45" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin.png" alt="linkedin"/></a>
+      </div>
     </div>
   );
 };

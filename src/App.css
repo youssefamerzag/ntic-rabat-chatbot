@@ -38,6 +38,7 @@ header {
   margin: 50px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .messages {
@@ -46,6 +47,7 @@ header {
   display: flex;
   flex-direction: column-reverse;
   overflow-y: auto;
+  text-decoration: none;
 }
 
 .message-bubble {
@@ -53,14 +55,15 @@ header {
     padding: 10px;
     margin: 10px auto; /* Updated to center the message horizontally */
     border-radius: 10px;
-    max-width: 70%;
+    max-width: 90%;
     text-align: center; /* Center the text within the bubble */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
 .user-message {
   align-self: flex-end;
   background-color: #e0f7fa;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .bot-message {
