@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import data from './istaBot.json';
+import stringSimilarity from 'string-similarity';
 
 const App = () => {
-  const [messages, setMessages] = useState([]);
+
   const [yourMessage, setYourMessage] = useState('');
-  const [botMessage, setBotMessage] = useState('');
+  const [botMessage, setBotMessage] = useState([
+    'Salut, comment puis-je t\'aider aujourd\'hui<br/>'
+  ]);
+  const [messages, setMessages] = useState([botMessage]);
 
   const send = () => {
     const newList = [...messages,yourMessage, botMessage];
@@ -20,15 +24,36 @@ const App = () => {
   };
 
   useEffect(() => {
-    const checkMessage = (intent) =>
-      intent.patterns.map((pattern) => pattern.toLowerCase()).includes(yourMessage.toLowerCase());
-      for (let i = 0; i <= 27; i++) {
-        if (checkMessage(data.intents[i])) {
-          setBotMessage(data.intents[i].responses[0]);
-          return;
+    const checkMessage = (intent) => {
+      const similarityThreshold = 0.6; 
+      const patterns = intent.patterns.map((pattern) => pattern.toLowerCase());
+      const userInput = yourMessage.toLowerCase();
+  
+      const matches = stringSimilarity.findBestMatch(userInput, patterns);
+      const bestMatch = matches.bestMatch;
+  
+      if (bestMatch.rating >= similarityThreshold) {
+        setBotMessage(intent.responses[0]);
+        return true;
       }
+  
+      return false;
+    };
+  
+    let matchFound = false;
+    for (let i = 0; i < data.intents.length; i++) {
+      matchFound = checkMessage(data.intents[i]);
+      if (matchFound) {
+        break;
       }
+    }
+  
+    if (!matchFound) {
+      setBotMessage('Sorry, I didn\'t understand that.');
+    }
+
   }, [yourMessage]);
+  
 
   return (
     <div>
